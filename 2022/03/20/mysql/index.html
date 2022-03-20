@@ -5,15 +5,152 @@
   
 
   
-  <title>Hexo</title>
+  <title>mysql | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="MySQL   MySQL三层结构 数据库位置  表的位置  数据库-表的本质仍然是文件   java操作MySQL 数据库创建数据库 123456789101112131415#演示数据库的操作#使用指令创建数据库create database hsp_db01;#使用指令删除数据库drop database hsp_db01#创建一个使用utf8字符集的hsp_db02数据库create d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql">
+<meta property="og:url" content="http://example.com/2022/03/20/mysql/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="MySQL   MySQL三层结构 数据库位置  表的位置  数据库-表的本质仍然是文件   java操作MySQL 数据库创建数据库 123456789101112131415#演示数据库的操作#使用指令创建数据库create database hsp_db01;#使用指令删除数据库drop database hsp_db01#创建一个使用utf8字符集的hsp_db02数据库create d">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220310172438438.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311091244801.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311091319882.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311162825747.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311162949438.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311163048080.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311163210376.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311163317272.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311164236687.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311164838315.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311172254528.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311174209886.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311190521656.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311191917892.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311201010506.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311201323736.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311201555909.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311203419517.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311203827793.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311204936911.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311211651161.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220311211750134.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312142127299.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312143318467.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312143451262.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312144242391.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312150015225.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312150054377.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312152449712.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312152528410.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312154909723.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312155129220.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312155917800.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312160932012.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312163305915.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312163412561.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312164221361.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312164801803.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312165743311.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312191827694.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312193931442.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312194613994.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312194647825.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312200203194.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312201234303.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312203514902.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312211945542.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312212508532.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220312212714286.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220313222554445.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220313230238844.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220313233907088.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220313234323095.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314221225433.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314221427615.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314222102780.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314225357502.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314230916352.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314233840498.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220314233825299.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220315160707553.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220315160734828.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220315164002376.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220315163948712.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220315173911684.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220315175120685.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316074936980.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316080737357.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316081903214.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316081851391.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316083125231.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316084145844.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316085033174.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316085133265.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316100418129.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316100703641.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316223814534.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316225605544.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316230055004.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220316232946529.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317141052172.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317144801725.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317150154539.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317151902395.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317151921854.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317161545599.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317161741555.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317163238433.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317163304180.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317181339323.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317182917624.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317190504408.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220317194025131.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220318155209545.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220318163736702.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220318163820254.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319114728455.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319115403395.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319142515991.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319143752969.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319143949491.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319144352135.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319144512921.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319201909329.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319201947705.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319203457829.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319203935833.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319205145119.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319205605702.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319211038829.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319211214222.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319213535076.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319213923117.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319214109664.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319214209626.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220319222831819.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320105326520.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320105347752.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320105740170.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320105953844.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320110751393.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320111304006.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320112736068.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320113236425.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320113142184.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320113522461.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320114601154.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320115203045.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320115338364.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320120637960.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320121947546.png">
+<meta property="og:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220320122352213.png">
+<meta property="article:published_time" content="2022-03-20T07:57:51.000Z">
+<meta property="article:modified_time" content="2022-03-20T08:01:28.541Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Nico/AppData/Roaming/Typora/typora-user-images/image-20220310172438438.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +199,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-mysql" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-mysql" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/03/20/mysql/" class="article-date">
   <time datetime="2022-03-20T07:57:51.000Z" itemprop="datePublished">2022-03-20</time>
@@ -77,8 +212,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/20/mysql/">mysql</a>
+    <h1 class="article-title" itemprop="name">
+      mysql
     </h1>
   
 
@@ -443,60 +578,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/03/20/hello-world/" class="article-date">
-  <time datetime="2022-03-20T07:22:51.925Z" itemprop="datePublished">2022-03-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/20/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2022/03/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/20/hello-world/" data-id="cl0yyehbu0000ccva6n2y5ks5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
